@@ -41,6 +41,36 @@ public class Steps {
         // @formatter:on
     }
 
+    /*
+    {
+        "page": 2,
+        "per_page": 6,
+        "total": 12,
+        "total_pages": 2,
+        "data": [
+            {
+                "id": 7,
+                "email": "michael.lawson@reqres.in",
+                "first_name": "Michael",
+                "last_name": "Lawson",
+                "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"
+            },
+            {
+                "id": 8,
+                "email": "lindsay.ferguson@reqres.in",
+                "first_name": "Lindsay",
+                "last_name": "Ferguson",
+                "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"
+            }
+         ]
+     }   
+     
+     -> without .flatten()
+     [["michael.lawson@reqres.in"], ["lindsay.ferguson@reqres.in"]]
+     
+     -> with .flatten()
+     ["michael.lawson@reqres.in", "lindsay.ferguson@reqres.in"]
+     */
     public void checkUserWithGroovyMagic() {
         // @formatter:off
         given()
